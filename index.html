@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+var sum, procents, years;
+
+do {
+
+sum = Number(prompt('Введите сумму вклада ','15'));
+
+} while (isNaN(sum));
+
+do {
+
+procents = Number(prompt('Процентная ставка','15'));
+
+
+} while (isNaN(procents));
+
+do {
+
+years = Number(prompt('Длительность вклада','15'));
+
+
+} while (isNaN(years));
+
+
+    for(var i = 0; i < years; i++){
+        sum = Math.round(sum + sum*procents/100);
+
+    }
+    alert( 'Итого вы получите' + ' ' + sum  + ' хуев в жопу , так как в нашей стране везде наебывают')
+
+
+</script>
+</body>
+</html>
